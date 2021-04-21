@@ -2,7 +2,7 @@
 
 @section('head')
 @stack('before-styles')
-    <link href="{{ mix('css/frontend.css') }}" rel="stylesheet">
+    <link href="{{ ('css/frontend.css') }}" rel="stylesheet">
     <livewire:styles />
     @stack('after-styles')
 
