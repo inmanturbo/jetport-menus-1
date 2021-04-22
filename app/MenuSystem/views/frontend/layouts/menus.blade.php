@@ -31,9 +31,9 @@
         @yield('before_scripts')
         @stack('before_scripts')
         <!-- Scripts -->
-   {{--     <script src="{{ mix('js/manifest.js') }}"></script>
+        <script src="{{ mix('js/manifest.js') }}"></script>
         <script src="{{ mix('js/vendor.js') }}"></script>
-        <script src="{{ mix('js/frontend.js') }}"></script>--}}
+        <script src="{{ mix('js/frontend.js') }}"></script>
         <livewire:scripts />
         @yield('after_scripts')
         @stack('after_scripts')

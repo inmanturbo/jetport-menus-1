@@ -22,5 +22,22 @@ class MenusServiceProvider extends ServiceProvider
         //$this->loadMigrationsFrom(__DIR__.'/Database/migrations');
         $this->loadRoutesFrom(__DIR__.'/menus_routes.php');
         //$this->loadViewsFrom(__DIR__.'/views', 'menus');
+
+        $this->viewComposer();
+    }
+
+    private function viewComposer()
+    {
+        View::composer(['frontend.menus.tabs.edit-link', 'frontend.menus.tabs.edit-menu'], function ($view) {
+            $menuService = app(MenuService::class);
+            $data = [
+                'parents' => $menuService->getMainMenus(),
+                'parentMenu' => $menuService->getParentMenu(request('parent')),
+                'group' => request('group'),
+                'permissions' => auth()->user()->getAllPermissions(),
+            ];
+
+            $view->with($data);
+        });
     }
 }

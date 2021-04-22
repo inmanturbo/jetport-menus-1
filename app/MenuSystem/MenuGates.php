@@ -9,7 +9,6 @@ class MenuGates
     public static function define()
     {
         Gate::define('any_menus_permission', function ($user = null) {
-            dd($user);
             // return true if access to web tinker is allowed
             return $user->hasAnyPermission([
                 'admin.access.menus.create',
@@ -17,7 +16,5 @@ class MenuGates
                 'admin.access.menus.delete'
             ]);
         });
-
     }
-
 }

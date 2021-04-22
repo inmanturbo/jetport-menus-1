@@ -2,7 +2,6 @@
 
 namespace App\MenuSystem;
 
-use App\MenuSystem\MenuService;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\View\View;
@@ -10,6 +9,7 @@ use Illuminate\View\View;
 class MenusLayoutComposer
 {
     public $user;
+
     protected $menuService;
 
     public function __construct(MenuService $menuService)

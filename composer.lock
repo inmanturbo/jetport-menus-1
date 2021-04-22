@@ -4,9 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-  
     "content-hash": "df64b9039ab3491b2f60307f211c141e",
-
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2961,31 +2959,29 @@
         },
         {
             "name": "mediconesystems/livewire-datatables",
-            "version": "dev-master",
+            "version": "v0.4.3",
             "source": {
                 "type": "git",
-
-                "url": "https://github.com/digearthworks/livewire-datatables.git",
-                "reference": "cab0e6701ff68403355c847140a492b010c615fb"
+                "url": "https://github.com/MedicOneSystems/livewire-datatables.git",
+                "reference": "b0f3b3b9ee801d6870de898436090b27b2bc19c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digearthworks/livewire-datatables/zipball/cab0e6701ff68403355c847140a492b010c615fb",
-                "reference": "cab0e6701ff68403355c847140a492b010c615fb",
+                "url": "https://api.github.com/repos/MedicOneSystems/livewire-datatables/zipball/b0f3b3b9ee801d6870de898436090b27b2bc19c0",
+                "reference": "b0f3b3b9ee801d6870de898436090b27b2bc19c0",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^7.0|^8.0",
                 "livewire/livewire": "^1.2|^2.0",
                 "maatwebsite/excel": "^3.1",
-                "php": "^7.2.5|^8.0"
+                "php": "^7.2.5"
             },
             "require-dev": {
                 "laravel/legacy-factories": "^1.0.4",
                 "orchestra/testbench": "^4.0|5.0|6.0",
                 "phpunit/phpunit": "^8.0|9.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -3019,12 +3015,10 @@
                 "mediconesystems"
             ],
             "support": {
-
                 "issues": "https://github.com/MedicOneSystems/livewire-datatables/issues",
                 "source": "https://github.com/MedicOneSystems/livewire-datatables/tree/v0.4.3"
-
             },
-            "time": "2021-04-17T11:58:50+00:00"
+            "time": "2020-11-16T12:02:40+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -9461,17 +9455,16 @@
         },
         {
             "name": "imanghafoori/laravel-microscope",
-
-            "version": "v1.0.150",
+            "version": "v1.0.151",
             "source": {
                 "type": "git",
                 "url": "https://github.com/imanghafoori1/laravel-microscope.git",
-                "reference": "00eafad126e90b938e93dbf480e71e373dabb3d9"
+                "reference": "e738130b6fc85650f539da833c51e27bc19dc6e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/imanghafoori1/laravel-microscope/zipball/00eafad126e90b938e93dbf480e71e373dabb3d9",
-                "reference": "00eafad126e90b938e93dbf480e71e373dabb3d9",
+                "url": "https://api.github.com/repos/imanghafoori1/laravel-microscope/zipball/e738130b6fc85650f539da833c51e27bc19dc6e6",
+                "reference": "e738130b6fc85650f539da833c51e27bc19dc6e6",
                 "shasum": ""
             },
             "require": {
@@ -9517,10 +9510,9 @@
             ],
             "support": {
                 "issues": "https://github.com/imanghafoori1/laravel-microscope/issues",
-                "source": "https://github.com/imanghafoori1/laravel-microscope/tree/v1.0.150"
+                "source": "https://github.com/imanghafoori1/laravel-microscope/tree/v1.0.151"
             },
-            "time": "2021-04-04T16:52:10+00:00"
-
+            "time": "2021-04-22T00:43:47+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -12739,7 +12731,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "mediconesystems/livewire-datatables": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": true,
