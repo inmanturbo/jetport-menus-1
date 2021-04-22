@@ -65,7 +65,7 @@
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             @if ($logged_in_user->isAdmin())
                                 <x-utils.link
-                                    :href="route('admin.dashboard')"
+                                    :href="route('dashboard')"
                                     :text="__('Administration')"
                                     class="dropdown-item" />
                             @endif
@@ -90,7 +90,7 @@
                                 onclick="event.preventDefault();document.getElementById('logout-form').submit();">
                                 <x-slot name="text">
                                     @lang('Logout')
-                                    <x-forms.post :action="route('frontend.auth.logout')" id="logout-form" class="d-none" />
+                                    <x-forms.post :action="route('logout')" id="logout-form" class="d-none" />
                                 </x-slot>
                             </x-utils.link>
                         </div>

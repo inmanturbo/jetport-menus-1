@@ -21,19 +21,19 @@
             @include('frontend.menus.includes.sidebar')
         @endcan
             <div class="content">
-                @include('includes.partials.read-only')
+{{--                @include('includes.partials.read-only')--}}
                 @include('includes.partials.logged-in-as')
                 @include('includes.partials.messages')
-                @include('includes.partials.announcements')
+{{--                @include('includes.partials.announcements')--}}
                 @yield('main.content')
             </div>
         </div><!-- sidebar wrapper closes here -->
         @yield('before_scripts')
         @stack('before_scripts')
         <!-- Scripts -->
-        <script src="{{ mix('js/manifest.js') }}"></script>
+   {{--     <script src="{{ mix('js/manifest.js') }}"></script>
         <script src="{{ mix('js/vendor.js') }}"></script>
-        <script src="{{ mix('js/frontend.js') }}"></script>
+        <script src="{{ mix('js/frontend.js') }}"></script>--}}
         <livewire:scripts />
         @yield('after_scripts')
         @stack('after_scripts')

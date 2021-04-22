@@ -14,6 +14,7 @@
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "imanghafoori/laravel-widgetize": "^2.2",
         "lab404/laravel-impersonate": "^1.7",
         "laravel/framework": "^8.12",
         "laravel/jetstream": "^2.3.2",
@@ -22,6 +23,7 @@
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.0",
         "mediconesystems/livewire-datatables": "dev-master",
+        "rappasoft/laravel-livewire-tables": "^0.3.3",
         "spatie/laravel-activitylog": "^3.17",
         "spatie/laravel-permission": "^4.0",
         "wildside/userstamps": "^2.1"
@@ -99,11 +101,5 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/digearthworks/livewire-datatables"
-        }
-    ]
+    "prefer-stable": true
 }

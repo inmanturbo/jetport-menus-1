@@ -1,5 +1,5 @@
 <nav style="{!! config('ui.navbar_inline_styles') !!}"
-class="navbar navbar-expand-xl fixed-top shadow-sm p-0 m-0 {!! $user_navbar_styles !!} ">
+class="navbar navbar-expand-xl fixed-top shadow-sm p-0 m-0 {!! config('ui.navbar_bootstrap4_classes') !!} ">
 
 @can(config('domains.auth.bookmarks_enabled')?'user.access.sidebar.bookmarks':'user.access.sidebar.office')
 <a href="#" id="sideMenuToggler" class="ml-0 p-0 nav-link sideMenuToggler">
@@ -156,17 +156,17 @@ class="navbar navbar-expand-xl fixed-top shadow-sm p-0 m-0 {!! $user_navbar_styl
 
             <div class="dropdown-menu dropdown-menu-right customClassForDropDown"
                 aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{ route('frontend.auth.logout') }}" onclick="event.preventDefault();
+                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                      document.getElementById('logout-form').submit();">
                     <i class="fas fa-sign-out-alt"></i> {{ __('Logout') }}
                 </a>
                 @if ($logged_in_user->isAdmin())
                 <x-utils.link
-                    :href="route('admin.dashboard')"
+                    :href="route('dashboard')"
                     :text="__('Administration')"
                     class="dropdown-item" />
                 @endif
-                <a class="dropdown-item" href="{{ route('frontend.user.account') }}">
+                <a class="dropdown-item" href="{{ ('frontend.user.account') }}">
                     @lang('Account')
                 </a>
                 <a class=" dropdown-item" onclick="
@@ -203,7 +203,7 @@ class="navbar navbar-expand-xl fixed-top shadow-sm p-0 m-0 {!! $user_navbar_styl
                     <i class="{{$hotlink_menu->icon->title??''}}"></i> {{$hotlink_menu->label}}
                 </a>
                 @endforeach
-                <form id='logout-form' action=" {{ route('frontend.auth.logout') }}" method="POST"
+                <form id='logout-form' action=" {{ route('logout') }}" method="POST"
                     style="display: none;">
                     @csrf
                 </form>
