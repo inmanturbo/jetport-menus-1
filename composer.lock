@@ -9455,16 +9455,16 @@
         },
         {
             "name": "imanghafoori/laravel-microscope",
-            "version": "v1.0.150",
+            "version": "v1.0.151",
             "source": {
                 "type": "git",
                 "url": "https://github.com/imanghafoori1/laravel-microscope.git",
-                "reference": "00eafad126e90b938e93dbf480e71e373dabb3d9"
+                "reference": "e738130b6fc85650f539da833c51e27bc19dc6e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/imanghafoori1/laravel-microscope/zipball/00eafad126e90b938e93dbf480e71e373dabb3d9",
-                "reference": "00eafad126e90b938e93dbf480e71e373dabb3d9",
+                "url": "https://api.github.com/repos/imanghafoori1/laravel-microscope/zipball/e738130b6fc85650f539da833c51e27bc19dc6e6",
+                "reference": "e738130b6fc85650f539da833c51e27bc19dc6e6",
                 "shasum": ""
             },
             "require": {
@@ -9510,9 +9510,9 @@
             ],
             "support": {
                 "issues": "https://github.com/imanghafoori1/laravel-microscope/issues",
-                "source": "https://github.com/imanghafoori1/laravel-microscope/tree/v1.0.150"
+                "source": "https://github.com/imanghafoori1/laravel-microscope/tree/v1.0.151"
             },
-            "time": "2021-04-04T16:52:10+00:00"
+            "time": "2021-04-22T00:43:47+00:00"
         },
         {
             "name": "justinrainbow/json-schema",

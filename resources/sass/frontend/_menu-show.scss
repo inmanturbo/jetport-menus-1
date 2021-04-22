@@ -1,0 +1,102 @@
+@function rem($value){
+    @return unquote(($value/1px)/16+"rem");
+}
+
+$colors:(
+    "mattBlackLight":"#303337",
+    "mattBlackDark": "#212121",
+    "mattGray":      "#878d8d",
+    "mattRed":       "#ec6271"
+);
+
+@each $colorName, $colorValue in $colors{
+
+    .bg-#{$colorName}{
+        background-color: #{$colorValue};
+    }
+    .text-#{$colorName}{
+        color: #{$colorValue};
+    }
+
+    .icon-info {
+        background: #f4f4f4;
+        float: left;
+        position: relative;
+        width: rem(104px);
+        height: rem(104px);
+        border: rem(2px) #fff solid;
+        border-radius: rem(5px);
+        box-shadow: 0 rem(1px) rem(1px) #d6d6d6;
+        margin: 0 0 rem(12px) rem(1rem(6px));
+      }
+
+      .icon-info img, .icon-info i {
+        margin-left: rem(13px);
+        margin-top: rem(9px);
+        font-size: rem(70px) !important;
+      }
+      .menu-i {
+        @extend .text-mattGray;
+        &:hover,
+        &.active {
+
+                @extend .text-mattRed;
+        }
+
+      }
+
+      .icon-info span {
+        position: absolute;
+        top: rem(82px);
+        width: rem(92px);
+        text-align: center;
+        left: rem(1px);
+        overflow: hidden;
+        height: rem(18px);
+        font-size: rem(17px);
+        line-height: rem(20px);
+      }
+
+      .icon-info:hover {
+        background: #fff;
+      }
+
+      .icon-info-black {
+        background: #dbdbdb;
+        float: left;
+        position: relative;
+        width: rem(100px);
+        height: rem(100px);
+        border: rem(2px) #fff solid;
+        border-radius: rem(5px);
+        box-shadow: 0 rem(1px) rem(1px) #d6d6d6;
+        margin: 0 0 rem(12px) rem(16px);
+      }
+
+      .icon-info-black img, .icon-info-black i {
+        margin-left: rem(18px);
+        margin-top: rem(8px);
+      }
+
+      .icon-info-black span {
+        position: absolute;
+        top: rem(76px);
+        width: rem(92px);
+        text-align: center;
+        left: rem(4px);
+        overflow: hidden;
+        height: rem(18px);
+        font-size: rem(11px);
+        line-height: rem(20px);
+      }
+
+      .icon-info-black:hover {
+        background: #cfcfcf;
+      }
+
+      .ui_icon {
+        margin-bottom: rem(8px);
+      }
+
+
+} // end color map loop
